@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)tweetAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *viewTweetBody;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
