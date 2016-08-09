@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface Tweet : NSObject
+@property (strong, nonatomic) NSString* tweetBody;
+@property (strong, nonatomic) NSString* name;
+@property (strong, nonatomic) NSDate * tweetedAt;
+@property (nonatomic)BOOL retweeted;
+-(NSInteger)numberOfCharacters;
 
 @end

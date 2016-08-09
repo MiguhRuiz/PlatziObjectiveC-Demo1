@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Tweet.h"
 
 @interface ViewController : UIViewController
 
-- (IBAction)tweetAction:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *viewTweetBody;
 @property (weak, nonatomic) IBOutlet UILabel *label;
+
+- (IBAction)tweetAction:(id)sender;
+
+@property (strong, nonatomic) Tweet *tweet;
 
 @end
 

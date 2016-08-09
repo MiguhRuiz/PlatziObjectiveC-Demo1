@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.tweet = [[Tweet alloc] init];
 }
 
 
@@ -25,7 +26,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-
 - (IBAction)tweetAction:(id)sender {
+    self.tweet.tweetBody = self.viewTweetBody.text;
+    NSString *result = [[NSString alloc] initWithFormat:@"Enviaste %li caracteres", (long) self.tweet.numberOfCharacters];
+    self.label.text = result;
+    [self.viewTweetBody resignFirstResponder];
 }
 @end

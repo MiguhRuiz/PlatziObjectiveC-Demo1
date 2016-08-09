@@ -9,5 +9,8 @@
 #import "Tweet.h"
 
 @implementation Tweet
+-(NSInteger)numberOfCharacters{
+    return self.tweetBody.length;
+}
 
 @end

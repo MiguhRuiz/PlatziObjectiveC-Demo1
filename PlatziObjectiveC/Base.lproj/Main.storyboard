@@ -25,6 +25,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xl-wd-Gpu">
                                 <state key="normal" title="Enviar"/>
+                                <connections>
+                                    <action selector="tweetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YTh-ST-byz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdO-2j-Jwo">
                                 <frame key="frameInset" minX="56" minY="158" width="281" height="21"/>
