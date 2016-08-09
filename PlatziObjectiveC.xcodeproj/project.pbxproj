@@ -15,6 +15,7 @@
 		117C16741D59CA36008BE7CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117C16721D59CA36008BE7CF /* LaunchScreen.storyboard */; };
 		117C167F1D59CA37008BE7CF /* PlatziObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C167E1D59CA37008BE7CF /* PlatziObjectiveCTests.m */; };
 		117C168A1D59CA37008BE7CF /* PlatziObjectiveCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C16891D59CA37008BE7CF /* PlatziObjectiveCUITests.m */; };
+		117C169B1D59D818008BE7CF /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C169A1D59D818008BE7CF /* Tweet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		117C16851D59CA37008BE7CF /* PlatziObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlatziObjectiveCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		117C16891D59CA37008BE7CF /* PlatziObjectiveCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlatziObjectiveCUITests.m; sourceTree = "<group>"; };
 		117C168B1D59CA37008BE7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		117C16991D59D818008BE7CF /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tweet.h; path = ../models/Tweet.h; sourceTree = "<group>"; };
+		117C169A1D59D818008BE7CF /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tweet.m; path = ../models/Tweet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		117C16631D59CA36008BE7CF /* PlatziObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				117C169C1D59D8D9008BE7CF /* models */,
 				117C16671D59CA36008BE7CF /* AppDelegate.h */,
 				117C16681D59CA36008BE7CF /* AppDelegate.m */,
 				117C166A1D59CA36008BE7CF /* ViewController.h */,
@@ -138,6 +142,15 @@
 				117C168B1D59CA37008BE7CF /* Info.plist */,
 			);
 			path = PlatziObjectiveCUITests;
+			sourceTree = "<group>";
+		};
+		117C169C1D59D8D9008BE7CF /* models */ = {
+			isa = PBXGroup;
+			children = (
+				117C16991D59D818008BE7CF /* Tweet.h */,
+				117C169A1D59D818008BE7CF /* Tweet.m */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +292,7 @@
 				117C166C1D59CA36008BE7CF /* ViewController.m in Sources */,
 				117C16691D59CA36008BE7CF /* AppDelegate.m in Sources */,
 				117C16661D59CA36008BE7CF /* main.m in Sources */,
+				117C169B1D59D818008BE7CF /* Tweet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +528,7 @@
 				117C16901D59CA37008BE7CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		117C16911D59CA37008BE7CF /* Build configuration list for PBXNativeTarget "PlatziObjectiveCTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +537,7 @@
 				117C16931D59CA37008BE7CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		117C16941D59CA37008BE7CF /* Build configuration list for PBXNativeTarget "PlatziObjectiveCUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +546,7 @@
 				117C16961D59CA37008BE7CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
